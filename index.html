@@ -2,27 +2,79 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ly tuong song</title>
   </head>
   <body>
     <div class="reveal">
+      <canvas id="snow-canvas"></canvas>
       <div class="slides">
 
-        <section>
-          <h1>Ly tuong song</h1>
-          <p>Trinh Cong Son</p>
+        <section class="slider" id="slide1">
+          <h1 id="header"><span class="char">L</span><span class="char">ý</span><span class="char">&nbsp;</span><span class="char">t</span><span class="char">ư</span><span class="char">ở</span><span class="char">n</span><span class="char">g</span><span class="char">&nbsp;</span><span class="char">s</span><span class="char">ố</span><span class="char">n</span><span class="char">g</span></h1>
+          <p id="slogan">“<span id="underline-text">Lý tưởng là ngọn đèn sáng chỉ đường.</span> 
+            Không có lý tưởng thì không có phương hướng xác định; 
+            không có phương hướng thì không có cuộc sống.”</p>
+          <p id="author"><span class="char2">&nbsp;</span><span class="char2">-</span><span class="char2">&nbsp;</span><span class="char2">L</span><span class="char2">e</span><span class="char2">v</span><span class="char2">&nbsp;</span><span class="char2">T</span><span class="char2">o</span><span class="char2">l</span><span class="char2">s</span><span class="char2">t</span><span class="char2">o</span><span class="char2">y</span><span class="char2">&nbsp;</span><span class="char2">-</span></p>
         </section>
 
-        <section>
-          <h1>Nguyen An Binh</h1>
-          <p>123</p>
+        <section class="slider" id="slide2">
+          <h1 id="header1">Tìm hiểu</h1>
+          <p class="desc" id="explain"><span id="underline-text">Sống có lí tưởng là xác định</span> được mục đích
+            cao đẹp và có kế hoạch, quyết tâm phấn đấu để đạt được
+            mục đích nhằm đóng góp cho lợi ích của cộng đồng
+            quốc gia, nhân loại.
+          </p>
+          <p class="desc" id="why"><span id="underline-text">Sống có lí tưởng giúp</span> mỗi người có động lực để phấn đấu, hoàn thành bản thân và
+            góp phần xây dựng đất nước.
+          </p>
+          <p class="desc" id="status"><span id="underline-text">Sống có lí tưởng đang dần được phổ biến</span> trong đa số
+            mọi người ở mọi độ tuổi, đặc biệt là thế hệ "Gen Z" hay thanh thiếu niên
+            hiện nay.
+          </p>
+          
         </section>
+
+        <section class="slider" id="slide3">
+          <h1 id="header2">Thống kê</h1>
+          <div class="chart-div">
+            <canvas id="myChart"></canvas>
+          </div>
+            <p class="desc3" id="lister">
+              Dữ liệu trong biểu đồ quạt bên phải thể hiện
+              rõ ràng về tỉ lệ các hoài bão của thanh thiếu
+              niên trong tương lai.
+            </p>
+            <div class="percent-div">
+            <p class="percent" id="teacher">
+              👩‍🏫 Giáo viên: 45%
+            </p>
+            <p class="percent" id="doctor">
+              👨‍⚕️ Bác sĩ: 25%
+            </p>
+            <p class="percent" id="engineer">
+              👨‍💻 Kỹ sư: 18%
+            </p>
+            <p class="percent" id="worker">
+              👨‍🏭 Công nhân: 10%
+            </p>
+            <p class="percent" id="gamer">
+              🎮 Tuyển thủ: 2%
+            </p>
+            </div>
+            <span class="sources-page">Nguồn: Báo Thanh Niên</span>
+        </section>
+
+        <section class="slider" id="slide4">
+          
+        </section>
+
 
       </div>
     </div>
 
-
+    <script type="module" src="/src/snow.ts"></script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
